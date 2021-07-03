@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tribute Donation</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="main-header">
+                <div class="logo">
+                    <img src="images/logo.png" alt="A Step Away From Home Logo" width="125">
+                </div>
+                <nav class="main-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="adoption.html">Adoption</a></li>
+                        <!--<li><a href="involved.html"></a>Get Involved</a></li>
+                        <li><a href="contribution.html">Ways to Give</a></li>  -->                      
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h2>Tribute Donation</h2>
+            <h3>Please complete each of the following fields.</h3>
+            <p>Please specify who you're honoring in the form below. We appreciate your donation!</p>
+            <form action="/signup" method="post">
+                <fieldset>
+                    <label>First Name</label>
+                    <input type="text" name="first_name"><br>
+                    <label>Last Name</label>
+                    <input type="text" name="last_name"><br>
+                    <label>Email</label>
+                    <input type="email" name="email"><br>
+                    <label>Contact Type</label>
+                    <select>
+                        <option value="individual">Individual</option>
+                        <option value="business">Business</option>
+                        <option value="foundation">Foundation</option>
+                        <option value="organization">Organization</option><br>
+                    </select><br>
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone_number"><br>
+                    <label>In Honor of</label>
+                    <input type="text" name="in_honor_of"><br>
+                    <label>Amount($)</label>
+                    <input type="number" name="amount"><br>
+                    <label>Payment</label><br>
+                    <input type="radio" name="payment" value="credit_card">Credit Card
+                    <input type="radio" name="payment" value="debit_card">Debit Card
+                    <input type="radio" name="payment" value="ach">ACH (Bank Account)<br><br>
+                    <input type="submit" value="Submit Donation">              
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <div id="nondisclaimer">
+                <div class="footer_desc">
+                    <h6 class="footer_title">About us</h6>
+                    <p>Our mission is threefold: to Rescue and Rehome adoptable animals, and to encourage Responsibility within the pet owning population.</p>
+                    <p>By providing rescue, adoption, and offering low cost pet care services, we are able to connect with our local community and enrich the lives of our pet population.</p>
+                </div>
+                <div class="copy">&copy;Copyright 2020 :: GreatCliffs.com</div>
+                <div class="social">
+                    <h6>Facebook Image</h6>
+                    <h6>Instagram Image</h6>
+                    <h6>Twitter Image</h6>
+                </div>
+            </div>
+            <div id="disclaimer">
+                <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
