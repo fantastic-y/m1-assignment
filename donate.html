@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body id="donate">
     <div class="container">
         <header>
             <div class="main-header">
@@ -25,35 +25,45 @@
             </div>
         </header>
         <main>
-            <h2>Tribute Donation</h2>
+            <h1>Tribute Donation</h1>
             <h3>Please complete each of the following fields.</h3>
             <p>Please specify who you're honoring in the form below. We appreciate your donation!</p>
             <form action="/signup" method="post">
                 <fieldset>
-                    <label>First Name</label>
-                    <input type="text" name="first_name"><br>
-                    <label>Last Name</label>
-                    <input type="text" name="last_name"><br>
-                    <label>Email</label>
-                    <input type="email" name="email"><br>
-                    <label>Contact Type</label>
-                    <select>
-                        <option value="individual">Individual</option>
-                        <option value="business">Business</option>
-                        <option value="foundation">Foundation</option>
-                        <option value="organization">Organization</option><br>
-                    </select><br>
-                    <label>Phone Number</label>
-                    <input type="tel" name="phone_number"><br>
-                    <label>In Honor of</label>
-                    <input type="text" name="in_honor_of"><br>
-                    <label>Amount($)</label>
-                    <input type="number" name="amount"><br>
-                    <label>Payment</label><br>
-                    <input type="radio" name="payment" value="credit_card">Credit Card
-                    <input type="radio" name="payment" value="debit_card">Debit Card
-                    <input type="radio" name="payment" value="ach">ACH (Bank Account)<br><br>
-                    <input type="submit" value="Submit Donation">              
+                    <div class="textbox">
+                        <label>First Name</label>
+                        <input type="text" name="first_name" placeholder="Your name...">
+                        <label>Last Name</label>
+                        <input type="text" name="last_name" placeholder="Your last name...">
+                        <label>Email</label>
+                        <input type="email" name="email" placeholder="animal-lover@astepawayfromhome.com">
+                    </div>
+                    <div class="selectmenu">
+                        <label>Contact Type</label>
+                        <select>
+                            <option value="individual">Individual</option>
+                            <option value="business">Business</option>
+                            <option value="foundation">Foundation</option>
+                            <option value="organization">Organization</option>
+                        </select>
+                    </div>
+                    <div class="textbox">
+                        <label>Phone Number</label>
+                        <input type="tel" name="phone_number" placeholder="888-888-8888">
+                        <label>In Honor of</label>
+                        <input type="text" name="in_honor_of" placeholder="Put a name...">
+                        <label>Amount</label>
+                        <input type="number" name="amount" placeholder="$100">
+                    </div>
+                    <div class="radios">
+                        <label>Payment</label>
+                        <input type="radio" name="payment" value="credit_card">Credit Card
+                        <input type="radio" name="payment" value="debit_card">Debit Card
+                        <input type="radio" name="payment" value="ach">ACH (Bank Account)
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Submit Donation"> 
+                    </div>             
                 </fieldset>
             </form>
         </main>
