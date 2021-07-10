@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>A Step Away From Home</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body id="home">
     <div class="container">
         <header>
             <div class="main-header">
@@ -24,36 +25,48 @@
             </div>
         </header>
         <main>
-            <h2>Welcome to A Step Away From Home</h2>
+            <h1>Welcome to A Step Away From Home</h1>
             <h3>Are you looking for me?</h3>
             <p>Adopt the perfect pets from our local shelters & rescues</p>
             <form action="/search" method="post">
                 <fieldset>
-                    <label>Enter your location</label><br>
-                    <input type="text" name="location"><br><br>
-                    <label>What are you looking for?</label><br>
-                    <input type="radio" name="pet" value="dogs">Dogs
-                    <input type="radio" name="pet" value="cats">Cats
-                    <input type="radio" name="pet" value="others">Others<br><br>
-                    <label>Age</label><br>
-                    <select>
-                        <option value="puppy">Any</option>
-                        <option value="puppy">Puppy</option>
-                        <option value="young">Young</option>
-                        <option value="adult">Adult</option>
-                        <option value="senior">Senior</option>
-                    </select><br><br>
-                    <label>Breed</label><br>
-                    <input type="text" name="breed"><br><br>
-                    <input type="submit" value="Search">              
+                    <div class="textbox">
+                        <label>Enter your location</label>
+                        <input type="text" name="location">
+                    </div>
+                    <div class="radios">
+                        <label>What are you looking for?</label>
+                        <input type="radio" name="pet" value="dogs">Dogs
+                        <input type="radio" name="pet" value="cats">Cats
+                        <input type="radio" name="pet" value="others">Others
+                    </div>
+                    <div class="selectmenu">
+                        <label>Age</label>
+                        <select>
+                            <option value="puppy">Any</option>
+                            <option value="puppy">Puppy</option>
+                            <option value="young">Young</option>
+                            <option value="adult">Adult</option>
+                            <option value="senior">Senior</option>
+                        </select>
+                    </div>
+                    <div class="textbox">
+                        <label>Breed</label>
+                        <input type="text" name="breed">
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Search">
+                    </div>              
                 </fieldset>
             </form>
         </main>
         <section>
+            <div class="clearfix">
+                <img src="images/rescueoftheweek.png" alt="rescue_of_the_week" width="500">
+            </div>
             <h3>Rescues of the Week</h3>
             <h4>Fish and Florence!</h4>
             <p>Meet our extended stay guests! Fish and Florence have been with us since Februry 2021 and cannot wait to find their forever homes! As a ladies only gal, Fish is still looking for her perfect sisterhood. Florence is beloved by all who meet him and will bring so much joy to any lucky family! Could they be your new forever friend?</p>
-            <img src="images/rescueoftheweek.png" alt="rescue_of_the_week" width="500">
             </ul>
         </section>
         <footer>
@@ -65,9 +78,9 @@
                 </div>
                 <div class="copy">&copy;Copyright 2020 :: GreatCliffs.com</div>
                 <div class="social">
-                    <h6>Facebook Image</h6>
-                    <h6>Instagram Image</h6>
-                    <h6>Twitter Image</h6>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
                 </div>
             </div>
             <div id="disclaimer">
