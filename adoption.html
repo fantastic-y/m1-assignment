@@ -73,9 +73,9 @@
             fileNames.push(captionTexts[i]+"_optimized");
             photos.push("<img src='images/"+fileNames[i]+".jpg'>");
             image = openList + photos[i];
-            text = openMiddleTag + openDescTag + descTexts[i] + closeDescTag + divcloseList + divcloseList;
-            imgText = openCaptionTag + captionTexts[i] + closeCaptionTag;
-            whole = divopenList + image + text + imgText + divcloseList;
+            description = openMiddleTag + openDescTag + descTexts[i] + closeDescTag + divcloseList + divcloseList;
+            caption = openCaptionTag + captionTexts[i] + closeCaptionTag;
+            whole = divopenList + image + description + caption + divcloseList;
             imageList.push(whole);
         }
         document.getElementById("available").innerHTML = imageList.join(" ");
