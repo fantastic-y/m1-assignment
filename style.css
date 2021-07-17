@@ -155,22 +155,38 @@ td:hover {
     color: #00848c;
 }
 /* section */
-section img {
-    float: right;
-    width: 700px;
+#adoption .img-text {
+    display: block;
+    text-align: center;
+    margin-right: 30px;
+    margin-bottom: 1px;
+    float: left;
+} 
+#adoption .middle {
+    transition: .5s ease;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
-section h3 {
-    font-size: 35px;
-    padding-left: 30px;
+#adoption .img-text:hover .middle{
+    opacity: 1;
 }
-section h4 {
-    font-size: 25px;
-    padding-left: 30px;
+#adoption .text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    width: 200px;
+    padding: 15px 30px;
+    opacity: 0.8;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 170px ;
 }
-section p {
+#adoption section {
     font-size: 20px;
-    padding-left: 30px;
-    padding-bottom: 200px;
+    text-transform: capitalize;
+    margin-bottom: 1000px;
+    margin-left: 180px;
 }
 /* footer */
 footer {
