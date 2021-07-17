@@ -27,31 +27,10 @@
         <main>
             <h1>You are just three steps away from a perfect adoption!</h1>
             <h3>Meet the gang!</h3>
-            <table>
-                <tbody>
-                    <tr>
-                        <td><img src="images/armstrong.jpg" alt="armstrong" width="300"></td>
-                        <td><img src="images/aurora.jpg" alt="aurora" width="300"></td>
-                        <td><img src="images/cadele.jpg" alt="cadele" width="300"></td>
-                    </tr>
-                    <tr>
-                        <td>Armstrong</td>
-                        <td>Aurora</td>
-                        <td>Cadele</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/wheaty.jpg" alt="wheaty" width="300"></td>
-                        <td><img src="images/turtle.jpg" alt="turtle" width="300"></td>
-                        <td><img src="images/guston.jpg" alt="guston" width="300"></td>
-                    </tr>
-                    <tr>
-                        <td>Wheaty</td>
-                        <td>Turtle</td>
-                        <td>Guston</td>
-                    </tr>
-                </tbody>
-            </table>
         </main>
+        <section>
+            <ul id="available"></ul>
+        </section>
         <footer>
             <div id="nondisclaimer">
                 <div class="footer_desc">
@@ -71,5 +50,23 @@
             </div>
         </footer>
     </div>
+    <!--javascript-->
+    <script>
+        var photos = [];
+        var fileNames = [];
+        var imageList = [];
+        var image;
+        var openList = "<li class'photo'>";
+        var closeList = "</li>";
+        availableNames = ["armstrong","aurora","bo","cadele","dumbo","guston","rose","shay","turtle","wheaty","wiley","zoro"];
+
+        for (var i=0 ; i<12 ; i++) {
+            fileNames.push(availableNames[i]+"_optimized");
+            photos.push("<img src='images/"+fileNames[i]+".jpg'>");
+            image = openList + photos[i] + closeList;
+            imageList.push(image);
+        }
+        document.getElementById("available").innerHTML = imageList.join(" ");
+    </script>
 </body>
 </html>
