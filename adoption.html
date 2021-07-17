@@ -59,21 +59,22 @@
         var text;
         var whole;
         var openList = "<div class='photo'>";
-        var popenList = "<p>";
-        var pcloseList = "</p>";
-        availableNames = ["armstrong","aurora","bo","cadele","dumbo","guston","rose","shay","turtle","wheaty","wiley","zoro"];
+        var openCaptionTag = "<p>";
+        var closeCaptionTag = "</p>";
+        captionTexts = ["armstrong","aurora","bo","cadele","dumbo","guston","rose","shay","turtle","wheaty","wiley","zoro"];
         var divopenList = "<div class='img-text'>";
         var divcloseList = "</div>";
-        var openListText = "<div class='text'>";
-        var openListMiddle = "<div class='middle'>";
-        availableTexts = ["May the force be with you","Just chill with me","Treats?","Need someone to talk with?","Let's do a movie night!","Wanna play?","Want a cuddle buddy?","Shhhh","I don't bite","Can I have a bread?","Night night","Wanna play?"];
+        var openDescTag = "<div class='description'>";
+        var closeDescTag = "</div>";
+        var openMiddleTag = "<div class='middle'>";
+        descTexts = ["May the force be with you","Just chill with me","Treats?","Need someone to talk with?","Let's do a movie night!","Wanna play?","Want a cuddle buddy?","Shhhh","I don't bite","Can I have a bread?","Night night","Wanna play?"];
 
         for (var i=0 ; i<12 ; i++) {
-            fileNames.push(availableNames[i]+"_optimized");
+            fileNames.push(captionTexts[i]+"_optimized");
             photos.push("<img src='images/"+fileNames[i]+".jpg'>");
             image = openList + photos[i];
-            text = openListMiddle + openListText + availableTexts[i] + divcloseList + divcloseList + divcloseList;
-            imgText = popenList + availableNames[i] + pcloseList;
+            text = openMiddleTag + openDescTag + descTexts[i] + closeDescTag + divcloseList + divcloseList;
+            imgText = openCaptionTag + captionTexts[i] + closeCaptionTag;
             whole = divopenList + image + text + imgText + divcloseList;
             imageList.push(whole);
         }

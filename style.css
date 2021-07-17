@@ -163,15 +163,15 @@ td:hover {
     float: left;
 } 
 #adoption .middle {
-    transition: .5s ease;
-    opacity: 0;
-    transform: translate(-50%, -50%);
+    transition: .1s ease;
+    visibility: hidden;
     text-align: center;
 }
 #adoption .img-text:hover .middle{
-    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
 }
-#adoption .text {
+#adoption .description {
     background-color: #04AA6D;
     color: white;
     font-size: 16px;
@@ -180,7 +180,7 @@ td:hover {
     opacity: 0.8;
     position: absolute;
     margin-top: -100px;
-    margin-left: 170px ;
+    margin-left: 25px ;
 }
 #adoption section {
     font-size: 20px;
