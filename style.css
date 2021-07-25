@@ -256,3 +256,10 @@ footer #nondisclaimer .social .fa-instagram {
 footer #nondisclaimer h6 {
     font-size: medium;
 }
+/*involved contact form*/
+#email {
+    visibility: hidden;
+}
+#phone {
+    visibility: hidden;
+}
