@@ -258,8 +258,8 @@ footer #nondisclaimer h6 {
 }
 /*involved contact form*/
 #email {
-    visibility: hidden;
+    display: none;
 }
 #phone {
-    visibility: hidden;
+    display: none;
 }
