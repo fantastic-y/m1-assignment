@@ -42,6 +42,7 @@ function displayInfo(animalIndex) {
 
 album();
 
+
 $(document).ready(function(){
     /* Open lightbox on button click */
     $('.lightbox-toggle img').click(function(){
@@ -53,10 +54,11 @@ $(document).ready(function(){
         }
     //Get text content in attribute
         var $altvalue = $(this).attr('alt'); //or var altvalue = $(this).attr('alt');
-        if ($altvalue=="Angkor Wat") {
-            var img = $('#photo:nth-child(1) img').clone(); //Duplicate DOM element
+        var imgalt = $('.img-text p').text();
+        if ($altvalue==imgalt) {
+            var img = $('#album:nth-child(1) img').clone(); //Duplicate DOM element
             $('.box').append(img); //Insert duplicated element in another element
-            }
+            }            
     });
     /* Click to close lightbox */
     $('.close, .backdrop').click(function(){
