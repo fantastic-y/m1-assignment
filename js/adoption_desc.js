@@ -42,23 +42,55 @@ function displayInfo(animalIndex) {
 
 album();
 
-
 $(document).ready(function(){
     /* Open lightbox on button click */
     $('.lightbox-toggle img').click(function(){
         $('.backdrop').animate({'opacity':'.50'}, 300, 'linear').css('display', 'block');
         $('.box').fadeIn();
+
     //Check if lightbox has an image
         if ($('.box').contents('img')) {
             $('.box').contents().remove('img'); //If true, clear image
         }
     //Get text content in attribute
         var $altvalue = $(this).attr('alt'); //or var altvalue = $(this).attr('alt');
-        var imgalt = $('.img-text p').text();
-        if ($altvalue==imgalt) {
-            var img = $('#album:nth-child(1) img').clone(); //Duplicate DOM element
+        if ($altvalue=="armstrong") {
+            var img = $('.img-text:nth-child(1) img').clone(); //Duplicate DOM element
             $('.box').append(img); //Insert duplicated element in another element
-            }            
+        } else if ($altvalue=="aurora") {
+            var img = $('.img-text:nth-child(2) img').clone(); //Duplicate DOM element
+            $('.box').append(img); //Insert duplicated element in another element
+        }   else if ($altvalue=="bo") {
+            var img = $('.img-text:nth-child(3) img').clone(); //Duplicate DOM element
+            $('.box').append(img); //Insert duplicated element in another element
+        }else if ($altvalue=="cadele") {
+            var img = $('.img-text:nth-child(4) img').clone(); //Duplicate DOM element
+            $('.box').append(img); //Insert duplicated element in another element
+        }else if ($altvalue=="dumbo") {
+            var img = $('.img-text:nth-child(5) img').clone(); //Duplicate DOM element
+            $('.box').append(img); //Insert duplicated element in another element
+        }else if ($altvalue=="guston") {
+            var img = $('.img-text:nth-child(6) img').clone(); //Duplicate DOM element
+            $('.box').append(img); //Insert duplicated element in another element
+        }else if ($altvalue=="rose") {
+            var img = $('.img-text:nth-child(7) img').clone(); //Duplicate DOM element
+            $('.box').append(img); //Insert duplicated element in another element
+        }else if ($altvalue=="shay") {
+            var img = $('.img-text:nth-child(8) img').clone(); //Duplicate DOM element
+            $('.box').append(img); //Insert duplicated element in another element
+        }else if ($altvalue=="turtle") {
+            var img = $('.img-text:nth-child(9) img').clone(); //Duplicate DOM element
+            $('.box').append(img); //Insert duplicated element in another element
+        }else if ($altvalue=="wheaty") {
+            var img = $('.img-text:nth-child(10) img').clone(); //Duplicate DOM element
+            $('.box').append(img); //Insert duplicated element in another element
+        }else if ($altvalue=="wiley") {
+            var img = $('.img-text:nth-child(11) img').clone(); //Duplicate DOM element
+            $('.box').append(img); //Insert duplicated element in another element
+        }else if ($altvalue=="zoro") {
+            var img = $('.img-text:nth-child(12) img').clone(); //Duplicate DOM element
+            $('.box').append(img); //Insert duplicated element in another element
+        }
     });
     /* Click to close lightbox */
     $('.close, .backdrop').click(function(){
